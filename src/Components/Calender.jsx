@@ -20,12 +20,12 @@ const Calender = () => {
   return (
     <div className='app'>
       
-      <h1 className='text-center'>Calendar</h1>
+      <h1 className='text-left'>Calendar</h1>
       <div className='calendar-container'>
         <Calendar onChange={setDate} value={date} />
         
       </div>
-      <p className='text-center'>
+      <p className='text-left'>
         <span className='bold'>Selected Date:</span>{' '}
         {date.toDateString()}
       </p>

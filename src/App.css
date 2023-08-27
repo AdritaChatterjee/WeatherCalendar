@@ -21,8 +21,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(165, 54, 54);
 }
+body{background-color: peachpuff;
+  color: black;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+  }
 
 .App-link {
   color: #61dafb;

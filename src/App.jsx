@@ -3,13 +3,22 @@ import {Route, Routes} from "react-router-dom";
 import Calendar from './Components/Calender';
 import ToDos from './Components/ToDos';
 import Menu from './Menu';
+import './App.css';
+
+const Home = () => {
+    return<><h1 className='text-center' style={{color: "purple"}}>Event Planner</h1>
+    <h2>Welcome to the Event Planner where you can arrange your everyday tasks. </h2>
+    
+    </> 
+   
+    
+  }
 const App = () => {
-    const Home = () => {
-        return <h1>Home Page</h1>
-        
-      }
+
+
     return (
         <>
+       
         <Menu />
         <Routes>
         <Route exact path='/' element={<Home/>} />
