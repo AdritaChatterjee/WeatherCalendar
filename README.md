@@ -112,5 +112,5 @@ How to setup this project
   <a href="https://github.com/pritika163"> Pritika Bhar &nbsp&nbsp  </a>
   <a href="https://github.com/AdritaChatterjee"> Adrita Chatterjee &nbsp&nbsp  </a>
   <a href="https://github.com/Infern0-3"> Sahil Sheikh &nbsp&nbsp </a>
-  <a href="https://github.com/Anubhav-Mandal"> Anubhav Mandal </a>
+  <a href="https://github.com/Rage-007"> Anubhav Mandal </a>
 </div>
