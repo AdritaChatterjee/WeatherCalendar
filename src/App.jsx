@@ -7,6 +7,7 @@ import './App.css';
 
 
 const Home = () => {
+    const storedValue = localStorage.getItem("input value")
     return<><h1 className='text-center' style={{color: "purple"}}>Event Planner</h1>
     <h2>Welcome to the Event Planner where you can arrange your everyday tasks. </h2>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKbfpCbZCS7EWHGXxlp0XyDsqaOgoaAA55xgygsJPONTWZkdkXQLxSpD1GyvgUlalHAmg&usqp=CAU"></img>
@@ -15,6 +16,7 @@ const Home = () => {
     <h3>Make your own to-do list for the day.</h3>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-YZOXo4UXyUlqZtYZCF8VueDD0s_mTTTRg&usqp=CAU"></img>
     <h3>Keep track of the weather in advance before planning out your day.</h3>
+    <h3 >keep your day tracked:{storedValue}</h3>
 
     </> 
     
@@ -30,6 +32,7 @@ const App = () => {
         <Routes>
         <Route exact path='/' element={<Home/>} />
         <Route exact path='/Calendar' element={<Calendar/>} />
+
         <Route exact path='/ToDos' element={<ToDos/>} />
         </Routes>
         </>
