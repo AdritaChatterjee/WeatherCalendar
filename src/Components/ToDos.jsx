@@ -1,95 +1,59 @@
-import React from "react";
-//import "./App.css";
-import { Button, Card, Form } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+import React, { useState } from 'react';
+//import './TodoList.css'; // Import your CSS file for styling
 
-function Todo({ todo, index, markTodo, removeTodo }) {
-  return (
-    <div
-      className="todo"
-      
-    >
-      <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>{todo.text}</span>
-      <div>
-        <Button variant="outline-success" onClick={() => markTodo(index)}>✓</Button>{' '}
-        <Button variant="outline-danger" onClick={() => removeTodo(index)}>✕</Button>
-      </div>
-    </div>
-  );
-}
-
-function FormTodo({ addTodo }) {
-  const [value, setValue] = React.useState("");
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (!value) return;
-    addTodo(value);
-    setValue("");
-  };
-
-  return (
-    <Form onSubmit={handleSubmit}> 
-    <Form.Group>
-      <Form.Label><b>Add Todo</b></Form.Label>
-      <Form.Control type="text" className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />
-    </Form.Group>
-    <Button variant="primary mb-3" type="submit">
-      Submit
-    </Button>
-  </Form>
-  );
-}
-
-function ToDos() {
-  const [todos, setTodos] = React.useState([
-    {
-      text: "This is a sampe todo",
-      isDone: false
-    }
+const TodoList = () => {
+  const [days, setDays] = useState([
+    { date: new Date(), todos: [] },
+    { date: new Date(new Date().getTime() + 86400000), todos: [] },
+    { date: new Date(new Date().getTime() + 2 * 86400000), todos: [] },
+    { date: new Date(new Date().getTime() + 3 * 86400000), todos: [] },
+    { date: new Date(new Date().getTime() + 4 * 86400000), todos: [] },
   ]);
 
-  const addTodo = text => {
-    const newTodos = [...todos, { text }];
-    setTodos(newTodos);
+  const handleAddTodo = (dayIndex, todo) => {
+    if (todo.trim() !== '') {
+      const newDays = [...days];
+        newDays[dayIndex].todos.push({ text: todo, id: Date.now() });
+      setDays(newDays);
+    }
   };
 
-  const markTodo = index => {
-    const newTodos = [...todos];
-    newTodos[index].isDone = true;
-    setTodos(newTodos);
-  };
-
-  const removeTodo = index => {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
+  const handleDeleteTodo = (dayIndex, todoId) => {
+    setDays(prevDays => {
+      const newDays = [...prevDays];
+      newDays[dayIndex].todos = newDays[dayIndex].todos.filter(todo => todo.id !== todoId);
+      return newDays;
+    });
   };
 
   return (
-    <div className="app">
-      <div className="container">
-        <h1 className="text-center mb-4">Todo List</h1>
-        <FormTodo addTodo={addTodo} />
-        <div>
-          {todos.map((todo, index) => (
-            <Card>
-              <Card.Body>
-                <Todo
-                key={index}
-                index={index}
-                todo={todo}
-                markTodo={markTodo}
-                removeTodo={removeTodo}
-                />
-              </Card.Body>
-            </Card>
-          ))}
+    <div className="todo-container">
+      {days.map((day, index) => (
+        <div className="day-container" key={index}>
+          <h2>{day.date.toDateString()}</h2>
+          <ul>
+            {day.todos.map((todo,id) => (
+              <ul key={id}>
+                {todo.text}
+                <button onClick={() => handleDeleteTodo(index, todo.id)}>Delete</button>
+              </ul>
+            ))}
+          </ul>
+          <input
+            type="text"
+            placeholder="Add a todo"
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                handleAddTodo(index, e.target.value);
+                e.target.value = ''; 
+              }
+            }}
+          />
         </div>
-      </div>
+      ))}
     </div>
   );
-}
+};
 
-export default ToDos;
+export default TodoList;
