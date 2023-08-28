@@ -1,5 +1,4 @@
-![Alt text](https://github.com/pritika163/WeatherCalendar/blob/master/public/LogoW.jpeg)
-
+![Weather](https://github.com/pritika163/WeatherCalendar/assets/121820717/0726e299-b706-439e-a1dd-33b46cf93630)
 <a href="https://weather-calendar-iota.vercel.app/">Visit the website here</a> <br>
 <a href="https://youtu.be/TKMKbTqSgkY">Demo video</a> 
 - The weather website was created by member <a href="https://github.com/Infern0-3"> Sahil Sheikh </a> <br>
