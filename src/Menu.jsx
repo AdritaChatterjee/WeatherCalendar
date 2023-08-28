@@ -4,9 +4,9 @@ const Menu = () => {
   return (
     <>
     <div className="menu_style"> 
-    <NavLink to="/Calendar" style={({isActive}) => ({color: isActive ? 'cyan': 'white'})}> Calendar</NavLink>
-    <NavLink to="/ToDos" style={({isActive}) => ({color: isActive ? 'cyan': 'white'})}> ToDos</NavLink>
-    <NavLink to="/" style= {({isActive}) => ({color: isActive ? 'cyan': 'white'})}> Home</NavLink>
+    <NavLink to="/Calendar" style={({isActive}) => ({color: isActive ? '#fff': 'yellow'})}> Calendar</NavLink>
+    <NavLink to="/ToDos" style={({isActive}) => ({color: isActive ? '#fff': 'yellow'})}> ToDos</NavLink>
+    <NavLink to="/" style= {({isActive}) => ({color: isActive ? '#fff': 'yellow'})}> Home</NavLink>
     </div>
     </>
   )

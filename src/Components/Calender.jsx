@@ -1,20 +1,9 @@
 
-/*import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
-//import "./App.css";
-  
-const Calender = () => {
-    
-};
-  
-export default Calender;*/
+
 import { useState } from 'react';
-//import ToDos from './ToDos';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-//import { Link } from 'react-router-dom';
-//import './App.css';
+
 
 const Calender = () => {
   const [date, setDate]=useState(new Date());
