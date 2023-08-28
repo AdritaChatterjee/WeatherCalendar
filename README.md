@@ -4,69 +4,113 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ ### ✨ <ins>*INSPIRATION* </ins> 
+- While planning for events, we might sometimes need to check the weather to make sure plans aren't spoiled thanks to mother nature. With this in mind we decided to create our weather calendar .
+- With a built-in calendar app and to-do list we have tried to solve this issue.
 
-In the project directory, you can run:
+### 💡 <ins>*WHAT PROBLEM DOES THE PROJECT SOLVE?* </ins>
+- The project helps to plan everyday activities in an organized manner.
+- One can plan outdoor activities depending on the weather.
+- Easy to Access for everybody and helps in planning the day ahead of time.
 
-### `npm start`
+### 🔍<ins>*OVERVIEW*</ins>
+- On loading the site, we will land on the homepage which will give a brief overview of the website.
+- You can go to the *Calendar* section and click on the *weather* button to check the forecast for the next five days at any location.
+- Then go to the *Todos* section to plan out your days.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ☠️ <ins>*CHALLENGES WE RAN INTO*</ins>
+- We faced some trouble syncing the to-do list with the respective dates.
+- We also ran into some issues during API integration.
+- Some of us were facing some the problem in git and github.
+- Also in alignment of some cards in css.
+ 
+### 🤔 <ins>*WHAT'S NEXT FOR OUR PROJECT?*</INS>
+- We want to extend the events' planning duration.
+- We want to add more categories such as school work, business meetings etc. for the to do list section.
+- Making the UI more user friendly and accessible.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔨 <ins>*TECH STACKS USED*</ins>
+- *React* <br>
+- *HTML*<br>
+- *CSS* <br>
+- *JAVASCRIPT*<br>
 
-### `npm test`
+## <ins>*GETTING STARTED*</ins>
+For setting up your project locally, follow these simple steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### <ins>*PREREQUISITES*</ins>
 
-### `npm run build`
+You must have NPM(Node Package Manager) installed  in your system , If you dont we got you covered  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
+  [Install NPM](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+How to setup this project
 
-### `npm run eject`
+*1.* Fork the repo.
+<br>
+*2.* Clone your forked copy of the project.
+   ```sh
+   https://github.com/<Username>/WeatherCalendar.git
+   ```
+*3.* Navigate to the project directory.
+   ```sh
+   cd WeatherCalendar
+   ```
+*4.* Add reference (remote) to the original repository.
+   ```sh
+   git remote add upstream https://github.com/pritika163/WeatherCalendar.git
+   ```
+*5.* Check the remotes for this repository.<br>
+  ```sh
+    git remote -v
+  ```  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+*6.* Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+   
+    git pull upstream master
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*7.* Create a new branch.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    
+    git checkout -b <your_branch_name>
+    
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*8.* Perfom your desired changes to the code base.
 
-## Learn More
+*9.* Track your changes.
+  ```sh
+  git add .
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*10.* Commit your changes .
+  ```sh
+  git commit -m "Relevant message"
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*11.* Push the committed changes in your feature branch to your remote repo.
+  ```sh
+  git push -u origin <your_branch_name>
+  ```
 
-### Code Splitting
+*12.* To create a pull request, click on `compare and pull requests`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*13.* Add appropriate title and description to your pull request explaining your changes and efforts done.
 
-### Analyzing the Bundle Size
+*14.* Click on `Create Pull Request`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+<div>
+<h1 align="center">
+ <b>Made By Team Decoders 🦸‍♂️
+</h1>
+ </div>
+<div>
+  <a href="https://github.com/pritika163"> Pritika Bhar &nbsp&nbsp  </a>
+  <a href="https://github.com/AdritaChatterjee"> Adrita Chatterjee &nbsp&nbsp  </a>
+  <a href="https://github.com/Infern0-3"> Sahil Sheikh &nbsp&nbsp </a>
+  <a href="https://github.com/Anubhav-Mandal"> Anubhav Mandal </a>
+</div>
