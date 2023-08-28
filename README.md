@@ -1,4 +1,4 @@
-![Alt text](https://github.com/pritika163/WeatherCalendar/blob/master/public/LogoW.jpeg)
+![Weather](https://github.com/pritika163/WeatherCalendar/assets/121820717/d6dfa145-fbdc-4f3f-b851-56f3066fe423)
 
 <a href="https://weather-calendar-iota.vercel.app/">Visit the website here</a> <br>
 <a href="https://youtu.be/TKMKbTqSgkY">Demo video</a> 
