@@ -1,5 +1,9 @@
 ![Alt text](https://github.com/pritika163/WeatherCalendar/blob/master/public/LogoW.jpeg)
 
+<a href="https://weather-calendar-iota.vercel.app/">Visit the website here</a> <br>
+<a href="https://youtu.be/TKMKbTqSgkY">Demo video</a> 
+- The weather website was created by member <a href="https://github.com/Infern0-3"> Sahil Sheikh </a> <br>
+<a href="https://github.com/Infern0-3/Weather-App">Github</a>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
