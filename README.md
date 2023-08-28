@@ -1,3 +1,5 @@
+![Alt text](https://github.com/pritika163/WeatherCalendar/blob/master/public/LogoW.jpeg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
