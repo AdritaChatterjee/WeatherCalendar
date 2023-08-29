@@ -56,7 +56,7 @@ How to setup this project
 <br>
 *2.* Clone your forked copy of the project.
    ```sh
-   https://github.com/<Username>/WeatherCalendar.git
+   git clone https://github.com/<Username>/WeatherCalendar.git
    ```
 *3.* Navigate to the project directory.
    ```sh
