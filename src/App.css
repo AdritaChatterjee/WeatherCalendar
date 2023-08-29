@@ -70,7 +70,8 @@ body{
   font-size: calc(10px + 2vmin);
   color: rgb(165, 54, 54);
 }
-body{background-color: #61dafb;
+body{
+  background-color: #54948e;
   color: black;
   padding: 40px;
   font-family: 'Times New Roman', Times, serif;
@@ -78,7 +79,7 @@ body{background-color: #61dafb;
   }
 
 .App-link {
-  color: #61dafb;
+  color: #318ba4;
 }
 
 @keyframes App-logo-spin {
