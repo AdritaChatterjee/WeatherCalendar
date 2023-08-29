@@ -11,7 +11,9 @@ const Home = () => {
     const storedValue = localStorage.getItem("input value")
     return<><div class = "bodypic"><h1 className='text-center' style={{color: "purple"}}>Event Planner</h1>
     
-    <h2>Welcome to the Event Planner where you can arrange your everyday tasks </h2>
+    <h2>Welcome to the Event Planner where you can arrange your everyday tasks  
+        
+    </h2>
     
     <div class = "items">
     <div class = "glass">
